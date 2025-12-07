@@ -43,12 +43,18 @@ The scraper returns structured JSON containing:
 
 ## Production Deployment
 
-**WSGI Server: Gunicorn**
+**WSGI Server: Gunicorn (Replit)**
 - **Problem**: Flask's built-in server is not production-ready
 - **Solution**: Gunicorn WSGI HTTP server included in dependencies
 - **Rationale**: Industry-standard production server for Python web applications
 - **Pros**: Reliable, supports worker processes, well-maintained
 - **Cons**: Requires additional configuration for optimal performance
+
+**Vercel Deployment**
+- **Configuration**: `vercel.json` with rewrites pattern
+- **Entry Point**: `api/index.py` contains the Flask app for Vercel
+- **Structure**: Uses `/api/` directory structure required by Vercel's Python runtime
+- **Deployment**: Push to GitHub and import in Vercel, or use `vercel deploy` CLI
 
 # External Dependencies
 
