@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionnaire Français-Français</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Dictionnaire Français-Français</h1>
+            <p class="subtitle">Recherchez la définition des mots en français</p>
+        </header>
+        
+        <div class="search-section">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Entrez un mot à rechercher..." 
+                    autocomplete="off"
+                >
+                <button id="searchBtn">Rechercher</button>
+            </div>
+        </div>
+
+        <div id="results" class="results-section"></div>
+        
+        <footer>
+            <p>Dictionnaire Français-Français - Version 1.0</p>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
